@@ -10,21 +10,25 @@ import UIKit
 
 class MHLoginViewController: UIViewController {
 
+    @IBOutlet weak var loginButton: UIButton!
+    
+    static func createLoginViewController() -> MHLoginViewController {
+        let vc = MHLoginViewController(nibName: "MHLoginViewController", bundle: nil)
+        return vc
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        loginButton.layer.cornerRadius = 5.0
+        navigationController?.navigationBar.isHidden = true
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func login(_ sender: Any) {
     }
-    */
-
+    
+    @IBAction func goToSignUp(_ sender: Any) {
+        let signUpVC = MHSignUpViewController.createSignUpViewController()
+        navigationController?.pushViewController(signUpVC, animated: true)
+    }
+    
 }
