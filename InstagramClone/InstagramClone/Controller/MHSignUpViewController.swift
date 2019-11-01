@@ -25,6 +25,9 @@ class MHSignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         signUpButton.layer.cornerRadius = 5.0
+        imagePickerVC = UIImagePickerController()
+        imagePickerVC.delegate = self
+        imagePickerVC.allowsEditing = true
     }
     
     //MARK:  IBAction
@@ -34,19 +37,13 @@ class MHSignUpViewController: UIViewController {
         alertVC.addAction(UIAlertAction(title: "Camera", style: .default, handler: {[weak self] (_) in
             guard let strongSelf = self else { return }
             if UIImagePickerController.isSourceTypeAvailable(.camera) {
-                strongSelf.imagePickerVC = UIImagePickerController()
                 strongSelf.imagePickerVC.sourceType = .camera
-                strongSelf.imagePickerVC.delegate = self
-                strongSelf.imagePickerVC.allowsEditing = true
                 strongSelf.present(strongSelf.imagePickerVC, animated: true, completion: nil)
             }
         }))
         alertVC.addAction(UIAlertAction(title: "Photo library", style: .default, handler: {[weak self] (_) in
             guard let strongSelf = self else { return }
-            strongSelf.imagePickerVC = UIImagePickerController()
-            strongSelf.imagePickerVC.delegate = strongSelf
             strongSelf.imagePickerVC.sourceType = .photoLibrary
-            strongSelf.imagePickerVC.allowsEditing = true
             strongSelf.present(strongSelf.imagePickerVC, animated: true, completion: nil)
         }))
         alertVC.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
@@ -60,20 +57,24 @@ class MHSignUpViewController: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     
+    //MARK: Private method
+    
+    private func setUpSelectImageButton(with image: UIImage) {
+        selectImageButton.setImage(image, for: .normal)
+        selectImageButton.clipsToBounds = true
+        selectImageButton.layer.cornerRadius = selectImageButton.frame.height / 2
+        selectImageButton.contentMode = .scaleAspectFill
+        selectImageButton.layer.borderWidth = 1.0
+        selectImageButton.layer.borderColor = UIColor.black.cgColor
+    }
+    
 }
 
 extension MHSignUpViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let image = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
-            selectImageButton.setImage(image, for: .normal)
-            selectImageButton.layer.cornerRadius = selectImageButton.frame.height / 2
-            selectImageButton.clipsToBounds = true
-            selectImageButton.contentMode = .scaleAspectFill
-            selectImageButton.layer.borderWidth = 2.0
-            selectImageButton.layer.borderColor = UIColor.black.cgColor
-            selectImageButton.layer.shadowColor = UIColor.lightGray.cgColor
-            selectImageButton.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+            setUpSelectImageButton(with: image)
             picker.dismiss(animated: true, completion: nil)
         }
     }
