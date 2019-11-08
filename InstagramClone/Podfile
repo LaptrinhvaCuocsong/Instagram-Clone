@@ -12,5 +12,7 @@ pod 'Firebase/Firestore'
 pod 'Firebase/Analytics'
 pod 'Firebase/Auth'
 pod 'Firebase/Storage'
+pod 'MBProgressHUD', '~> 1.1'
+pod 'KeychainSwift', '~> 18.0'
 
 end

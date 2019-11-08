@@ -117,7 +117,9 @@ PODS:
     - nanopb (~> 0.3)
   - gRPC-Core/Interface (1.21.0)
   - GTMSessionFetcher/Core (1.2.2)
+  - KeychainSwift (18.0.0)
   - leveldb-library (1.22)
+  - MBProgressHUD (1.1.0)
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
     - nanopb/encode (= 0.3.901)
@@ -131,6 +133,8 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Firestore
   - Firebase/Storage
+  - KeychainSwift (~> 18.0)
+  - MBProgressHUD (~> 1.1)
 
 SPEC REPOS:
   trunk:
@@ -152,7 +156,9 @@ SPEC REPOS:
     - "gRPC-C++"
     - gRPC-Core
     - GTMSessionFetcher
+    - KeychainSwift
     - leveldb-library
+    - MBProgressHUD
     - nanopb
     - Protobuf
 
@@ -175,10 +181,12 @@ SPEC CHECKSUMS:
   "gRPC-C++": 9dfe7b44821e7b3e44aacad2af29d2c21f7cde83
   gRPC-Core: c9aef9a261a1247e881b18059b84d597293c9947
   GTMSessionFetcher: 61bb0f61a4cb560030f1222021178008a5727a23
+  KeychainSwift: c46e1438d121e47459fb304ac88c5e058a2a91ed
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Protobuf: a4dc852ad69c027ca2166ed287b856697814375b
 
-PODFILE CHECKSUM: c8e5883a011a36f55d5de86df0415730f04bf1f1
+PODFILE CHECKSUM: c5fa0e622b7aa7029bac085ebd34b401e04ed1b1
 
 COCOAPODS: 1.8.4

@@ -15,14 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
-        window = UIWindow()
-        let navigationVC = UINavigationController(rootViewController: MHLoginViewController.createLoginViewController())
-        window?.rootViewController = navigationVC
-        window?.makeKeyAndVisible()
+        configRootViewController()
         return true
     }
 
@@ -95,5 +91,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
+    // MARK: - Private method
+    
+    private func configRootViewController() {
+        window = UIWindow()
+        // If user allow remember account then show tabbar else show login screen
+        if (UserdefaultService.share.get(with: Constants.REMEBER_USER_KEY) as? Bool) ?? false {
+            let tabBarVC = MHRootTabBarController()
+            window?.rootViewController = tabBarVC
+        }
+        else {
+            let navigationVC = UINavigationController(rootViewController: MHLoginViewController.createLoginViewController())
+            window?.rootViewController = navigationVC
+        }
+        window?.makeKeyAndVisible()
+    }
+    
 }
 

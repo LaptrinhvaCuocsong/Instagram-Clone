@@ -7,6 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1801D72D236CAFCA0026F83E /* DeviceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1801D72C236CAFCA0026F83E /* DeviceHelper.swift */; };
+		181D7F7423706E8E0053274D /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D7F7323706E8E0053274D /* UIView+Extension.swift */; };
+		182CCD54236DE069002FC1F0 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182CCD53236DE069002FC1F0 /* StorageService.swift */; };
+		182CCD58236ED02B002FC1F0 /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182CCD57236ED02B002FC1F0 /* AccountService.swift */; };
+		182CCD5A236ED2FB002FC1F0 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182CCD59236ED2FB002FC1F0 /* Account.swift */; };
+		1854D8472373014800A0040E /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1854D8462373014800A0040E /* KeychainService.swift */; };
+		188FF2DA236D9DA600E0F0A3 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188FF2D9236D9DA600E0F0A3 /* AuthenticationService.swift */; };
+		189C5C9823718B4400821251 /* MHHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189C5C9623718B4400821251 /* MHHomeViewController.swift */; };
+		189C5C9923718B4400821251 /* MHHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 189C5C9723718B4400821251 /* MHHomeViewController.xib */; };
+		189C5C9C23718B6100821251 /* MHSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189C5C9A23718B6000821251 /* MHSearchViewController.swift */; };
+		189C5C9D23718B6100821251 /* MHSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 189C5C9B23718B6100821251 /* MHSearchViewController.xib */; };
+		189C5CA023718B8300821251 /* MHPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189C5C9E23718B8300821251 /* MHPostViewController.swift */; };
+		189C5CA123718B8300821251 /* MHPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 189C5C9F23718B8300821251 /* MHPostViewController.xib */; };
+		189C5CA423718BA000821251 /* MHNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189C5CA223718BA000821251 /* MHNotificationViewController.swift */; };
+		189C5CA523718BA000821251 /* MHNotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 189C5CA323718BA000821251 /* MHNotificationViewController.xib */; };
+		189C5CA823718BC200821251 /* MHProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189C5CA623718BC200821251 /* MHProfileViewController.swift */; };
+		189C5CA923718BC200821251 /* MHProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 189C5CA723718BC200821251 /* MHProfileViewController.xib */; };
+		189C5CAB2371935500821251 /* MHRootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189C5CAA2371935500821251 /* MHRootTabBarController.swift */; };
+		18EB27C823745B5500070158 /* UserdefaultService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EB27C723745B5500070158 /* UserdefaultService.swift */; };
+		18EB27CA23745C0C00070158 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EB27C923745C0C00070158 /* Constants.swift */; };
+		18EB27CC237467F400070158 /* Notification.Name + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EB27CB237467F400070158 /* Notification.Name + Extension.swift */; };
 		41AA6AA98B5A30E0C5788557 /* Pods_InstagramClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B51F02221493944776B5CE80 /* Pods_InstagramClone.framework */; };
 		A12DECDA235498BD00328DE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12DECD9235498BD00328DE4 /* AppDelegate.swift */; };
 		A12DECE2235498BD00328DE4 /* InstagramClone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A12DECE0235498BD00328DE4 /* InstagramClone.xcdatamodeld */; };
@@ -20,6 +41,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1801D72C236CAFCA0026F83E /* DeviceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceHelper.swift; sourceTree = "<group>"; };
+		181D7F7323706E8E0053274D /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		182CCD53236DE069002FC1F0 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		182CCD57236ED02B002FC1F0 /* AccountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
+		182CCD59236ED2FB002FC1F0 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Account.swift; path = InstagramClone/Service/Account.swift; sourceTree = SOURCE_ROOT; };
+		1854D8462373014800A0040E /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		188FF2D9236D9DA600E0F0A3 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		189C5C9623718B4400821251 /* MHHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHHomeViewController.swift; sourceTree = "<group>"; };
+		189C5C9723718B4400821251 /* MHHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MHHomeViewController.xib; sourceTree = "<group>"; };
+		189C5C9A23718B6000821251 /* MHSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHSearchViewController.swift; sourceTree = "<group>"; };
+		189C5C9B23718B6100821251 /* MHSearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MHSearchViewController.xib; sourceTree = "<group>"; };
+		189C5C9E23718B8300821251 /* MHPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHPostViewController.swift; sourceTree = "<group>"; };
+		189C5C9F23718B8300821251 /* MHPostViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MHPostViewController.xib; sourceTree = "<group>"; };
+		189C5CA223718BA000821251 /* MHNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHNotificationViewController.swift; sourceTree = "<group>"; };
+		189C5CA323718BA000821251 /* MHNotificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MHNotificationViewController.xib; sourceTree = "<group>"; };
+		189C5CA623718BC200821251 /* MHProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHProfileViewController.swift; sourceTree = "<group>"; };
+		189C5CA723718BC200821251 /* MHProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MHProfileViewController.xib; sourceTree = "<group>"; };
+		189C5CAA2371935500821251 /* MHRootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHRootTabBarController.swift; sourceTree = "<group>"; };
+		18EB27C723745B5500070158 /* UserdefaultService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserdefaultService.swift; sourceTree = "<group>"; };
+		18EB27C923745C0C00070158 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		18EB27CB237467F400070158 /* Notification.Name + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification.Name + Extension.swift"; sourceTree = "<group>"; };
 		24A811CE77A5EC420E93A57C /* Pods-InstagramClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramClone.release.xcconfig"; path = "Target Support Files/Pods-InstagramClone/Pods-InstagramClone.release.xcconfig"; sourceTree = "<group>"; };
 		9298F87F06A690D8BB8627F4 /* Pods-InstagramClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramClone.debug.xcconfig"; path = "Target Support Files/Pods-InstagramClone/Pods-InstagramClone.debug.xcconfig"; sourceTree = "<group>"; };
 		A12DECD6235498BD00328DE4 /* InstagramClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +90,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		181D7F7223706E6D0053274D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				181D7F7323706E8E0053274D /* UIView+Extension.swift */,
+				18EB27CB237467F400070158 /* Notification.Name + Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		188FF2D8236D9D8D00E0F0A3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				188FF2D9236D9DA600E0F0A3 /* AuthenticationService.swift */,
+				182CCD53236DE069002FC1F0 /* StorageService.swift */,
+				182CCD57236ED02B002FC1F0 /* AccountService.swift */,
+				1854D8462373014800A0040E /* KeychainService.swift */,
+				18EB27C723745B5500070158 /* UserdefaultService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		7F455896E7FC8A379FBA9A9A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				A12DECD9235498BD00328DE4 /* AppDelegate.swift */,
+				181D7F7223706E6D0053274D /* Extension */,
+				188FF2D8236D9D8D00E0F0A3 /* Service */,
 				A13019F8236B45E3006407EB /* Helper */,
 				A12DECF12354999800328DE4 /* Support File */,
 				A12DECF02354998E00328DE4 /* View */,
@@ -91,6 +156,7 @@
 		A12DECEE2354998100328DE4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				182CCD59236ED2FB002FC1F0 /* Account.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -102,6 +168,17 @@
 				A12DECF3235499FE00328DE4 /* MHLoginViewController.xib */,
 				A12DECFA2354B03E00328DE4 /* MHSignUpViewController.swift */,
 				A12DECFB2354B03E00328DE4 /* MHSignUpViewController.xib */,
+				189C5C9623718B4400821251 /* MHHomeViewController.swift */,
+				189C5C9723718B4400821251 /* MHHomeViewController.xib */,
+				189C5C9A23718B6000821251 /* MHSearchViewController.swift */,
+				189C5C9B23718B6100821251 /* MHSearchViewController.xib */,
+				189C5C9E23718B8300821251 /* MHPostViewController.swift */,
+				189C5C9F23718B8300821251 /* MHPostViewController.xib */,
+				189C5CA223718BA000821251 /* MHNotificationViewController.swift */,
+				189C5CA323718BA000821251 /* MHNotificationViewController.xib */,
+				189C5CA623718BC200821251 /* MHProfileViewController.swift */,
+				189C5CA723718BC200821251 /* MHProfileViewController.xib */,
+				189C5CAA2371935500821251 /* MHRootTabBarController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -128,6 +205,8 @@
 			isa = PBXGroup;
 			children = (
 				A13019F9236B4608006407EB /* Validator.swift */,
+				1801D72C236CAFCA0026F83E /* DeviceHelper.swift */,
+				18EB27C923745C0C00070158 /* Constants.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -201,8 +280,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				189C5CA523718BA000821251 /* MHNotificationViewController.xib in Resources */,
 				A12DECFD2354B03E00328DE4 /* MHSignUpViewController.xib in Resources */,
 				A12DECFF2354C64800328DE4 /* GoogleService-Info.plist in Resources */,
+				189C5CA123718B8300821251 /* MHPostViewController.xib in Resources */,
+				189C5CA923718BC200821251 /* MHProfileViewController.xib in Resources */,
+				189C5C9923718B4400821251 /* MHHomeViewController.xib in Resources */,
+				189C5C9D23718B6100821251 /* MHSearchViewController.xib in Resources */,
 				A12DECF723549D4400328DE4 /* Assets.xcassets in Resources */,
 				A12DECF5235499FE00328DE4 /* MHLoginViewController.xib in Resources */,
 			);
@@ -257,11 +341,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				181D7F7423706E8E0053274D /* UIView+Extension.swift in Sources */,
+				182CCD58236ED02B002FC1F0 /* AccountService.swift in Sources */,
+				18EB27C823745B5500070158 /* UserdefaultService.swift in Sources */,
+				189C5C9823718B4400821251 /* MHHomeViewController.swift in Sources */,
+				189C5CA023718B8300821251 /* MHPostViewController.swift in Sources */,
+				189C5CAB2371935500821251 /* MHRootTabBarController.swift in Sources */,
+				189C5CA423718BA000821251 /* MHNotificationViewController.swift in Sources */,
 				A12DECF4235499FE00328DE4 /* MHLoginViewController.swift in Sources */,
+				18EB27CC237467F400070158 /* Notification.Name + Extension.swift in Sources */,
+				1801D72D236CAFCA0026F83E /* DeviceHelper.swift in Sources */,
 				A12DECFC2354B03E00328DE4 /* MHSignUpViewController.swift in Sources */,
 				A13019FA236B4608006407EB /* Validator.swift in Sources */,
+				182CCD5A236ED2FB002FC1F0 /* Account.swift in Sources */,
 				A12DECE2235498BD00328DE4 /* InstagramClone.xcdatamodeld in Sources */,
+				182CCD54236DE069002FC1F0 /* StorageService.swift in Sources */,
+				189C5C9C23718B6100821251 /* MHSearchViewController.swift in Sources */,
+				18EB27CA23745C0C00070158 /* Constants.swift in Sources */,
+				1854D8472373014800A0040E /* KeychainService.swift in Sources */,
+				189C5CA823718BC200821251 /* MHProfileViewController.swift in Sources */,
 				A12DECDA235498BD00328DE4 /* AppDelegate.swift in Sources */,
+				188FF2DA236D9DA600E0F0A3 /* AuthenticationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
